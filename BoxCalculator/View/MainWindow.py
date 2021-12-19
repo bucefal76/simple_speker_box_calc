@@ -43,7 +43,7 @@ class MainWindow(Frame):
 
         # self.__text_display.println("-----------------------------------------------------------")
         self.__text_display.println(
-            "This is a very simple loudspeakers box calculator.")
+            "This is a very basic loudspeakers box calculator.")
         self.__text_display.println(
             "It calculates box net volume for 1 or 2 speakers in bass reflex SBB4, QB3 and sealed boxes.")
         self.__text_display.println(
@@ -51,7 +51,7 @@ class MainWindow(Frame):
         self.__text_display.println(
             "Filters configuration for the 2 speakers can be parallel or cascade.")
         self.__text_display.println(
-            "Vented Box calculations takes under the consideration impact of the filter Rs on the final Qts.")
+            "Vented Box calculations takes under the consideration impact of the woofer filter Rs on the final Qts.")
         self.__text_display.println(
             "Calculations are based at document publish by Jaroslaw Sobolski under the link:")
         self.__text_display.println(
@@ -63,7 +63,7 @@ class MainWindow(Frame):
         self.__text_display.println(
             "Progam code copyrights belongs to T.Jakobiec 2021")
         self.__text_display.println(
-            "Free to use in profit and non profit applications.")
+            "Free to use in profit and non profit purpose.")
         self.__text_display.println(
             "Author does not guarantee that calculation results are correct, use program at your own risk!")
         # self.__text_display.println("-----------------------------------------------------------")

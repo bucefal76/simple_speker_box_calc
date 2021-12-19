@@ -135,12 +135,14 @@ class SpeakerWindow(Toplevel):
             self.__label_Rc2.grid()
             self.__edit_Rc2.grid()
             self.__speaker_configuration.numer_of_sepakers = 2
+            self.__cascade_filters_check.configure(state=NORMAL)
         else:
             self.__label_Rc2.grid_remove()
             self.__edit_Rc2.grid_remove()
             self.__speaker_configuration.numer_of_sepakers = 1
             self.__speaker_configuration.cascade = 0
             self.__cascade_filters_check.deselect()
+            self.__cascade_filters_check.configure(state=DISABLED)
 
     def on_check_btn(self):
         self.__speaker_configuration.cascade = self.__check_btn_var.get()
@@ -192,10 +194,12 @@ class SpeakerWindow(Toplevel):
             self.__no_of_speakers_list_box.select_set(0)
             self.__label_Rc2.grid_remove()
             self.__edit_Rc2.grid_remove()
+            self.__cascade_filters_check.configure(state=DISABLED)
         else:
             self.__no_of_speakers_list_box.select_set(1)
             self.__label_Rc2.grid()
             self.__edit_Rc2.grid()
+            self.__cascade_filters_check.configure(state=NORMAL)
 
         if speakerConfiguration.cascade == 0:
             self.__cascade_filters_check.deselect()

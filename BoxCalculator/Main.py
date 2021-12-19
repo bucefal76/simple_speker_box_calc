@@ -13,7 +13,7 @@ if __name__ == '__main__':
     print("Starting the BoxCalculator...")
 
     master = Tk()
-    master.title("BoxCalc 0.02")
+    master.title("BoxCalc 0.03")
     master.geometry("800x600")
     master.resizable(False, False)
 

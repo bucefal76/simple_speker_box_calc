@@ -13,7 +13,7 @@ class SpeakerWindow(Toplevel):
         self.__check_btn_var = IntVar()
 
         self.title("Speaker parameters")
-        self.geometry("500x400")
+        self.geometry("630x500")
         self.resizable(False, False)
         self.create_widgets()
 
